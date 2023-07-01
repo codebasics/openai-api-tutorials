@@ -5,7 +5,7 @@ import logging
 import os
 from secret_key import openapi_key
 
-os.environ['OPENAI_API_KEY'] = openapi_key
+openai.api_key = openapi_key
 
 def get_json_str_from_text(text):
     '''
